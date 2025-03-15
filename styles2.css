@@ -629,20 +629,32 @@ footer {
     width: 90%;
 }
 
-.search-wrapper {
-    position: relative;
-    background: rgba(255, 255, 255, 0.15);
-    border-radius: 50px;
-    backdrop-filter: blur(10px);
-    padding: 5px;
-    box-shadow: 0 8px 32px rgba(31, 38, 135, 0.15);
-    transition: all 0.3s ease;
-    border: 2px solid rgba(255, 255, 255, 0.1);
-}
+@media (max-width: 768px) {
+    .search-wrapper {
+        width: 95%;
+        margin: 0 auto;
+        border-radius: 30px;
+        padding: 3px;
+    }
+    
+    .search-wrapper:hover {
+        transform: translateY(-1px);
+        box-shadow: 0 8px 20px rgba(46, 204, 113, 0.2);
+    }
+    
+    /* Your existing mobile styles */
+    #heroSearch {
+        padding: 1rem 1.5rem;
+        font-size: 1rem;
+    }
 
-.search-wrapper:hover {
-    transform: translateY(-2px);
-    box-shadow: 0 12px 40px rgba(46, 204, 113, 0.25);
+    .search-button {
+        padding: 0.8rem 1.5rem;
+    }
+
+    .search-text {
+        display: none;
+    }
 }
 
 #heroSearch {
