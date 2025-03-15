@@ -843,8 +843,8 @@ footer {
     display: flex;
     align-items: center;
     gap: 1rem;  /* Increased gap between items within groups */
-    height: auto;
-    width: auto;
+    height:200px;
+    width : 500px;
     min-width: 150px; /* Added minimum width to prevent squishing */
     flex-basis: calc(33% - 1.5rem); /* Set a flex basis for better distribution */
     box-sizing: border-box; /* Ensure padding is included in width calculations */
