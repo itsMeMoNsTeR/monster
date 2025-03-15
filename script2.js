@@ -71,12 +71,6 @@
     });
 
     function showRedirectFeedback(searchTerm, container) {
-        container.innerHTML = `
-            <div class="search-result">
-                <p>Taking you to ${searchTerm} disposal guide...</p>
-                <div class="loading-spinner"></div>
-            </div>
-        `;
         document.body.appendChild(container);
     }
 
