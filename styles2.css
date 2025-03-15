@@ -840,19 +840,23 @@ footer {
     height: auto;
     width: auto;
     flex-wrap: wrap;
-    gap: 1rem;
+    gap: 1.5rem;  /* Increased gap between keyword groups */
     justify-content: center;
+    padding: 1rem; /* Added padding around the entire container */
 }
 
 .keyword-group {
     background: rgba(255, 255, 255, 0.1);
-    padding: 1rem;
+    padding: 1.2rem;  /* Increased padding inside each group */
     border-radius: 8px;
     display: flex;
     align-items: center;
-    gap: 0.8rem;
+    gap: 1rem;  /* Increased gap between items within groups */
     height: auto;
     width: auto;
+    min-width: 150px; /* Added minimum width to prevent squishing */
+    flex-basis: calc(33% - 1.5rem); /* Set a flex basis for better distribution */
+    box-sizing: border-box; /* Ensure padding is included in width calculations */
 }
 
 .bin-tag {
