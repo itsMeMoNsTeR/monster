@@ -7,26 +7,26 @@
     // Search Configuration
     const wasteGuide = {
         // Green Bin Items
-        'glass': 'Green/green.html',
-        'paper': 'Green/green.html',
-        'cardboards': 'Green/green.html',
-        'newspapers': 'Green/green.html',
-        'magazines': 'Green/green.html',
+        'glass': 'green.html',
+        'paper': 'green.html',
+        'cardboards': 'green.html',
+        'newspapers': 'green.html',
+        'magazines': 'green.html',
         
         // Blue Bin Items
-        'bottles': 'Blue/blue.html',
-        'cans': 'Blue/blue.html',
-        'plastic bottles': 'Blue/blue.html',
-        'aluminum cans': 'Blue/blue.html',
-        'beverage containers': 'Blue/blue.html',
-        'tins' : 'Blue/blue',
+        'bottles': 'blue.html',
+        'cans': 'blue.html',
+        'plastic bottles': 'blue.html',
+        'aluminum cans': 'blue.html',
+        'beverage containers': 'blue.html',
+        'tins' : 'blue',
         
         // Black Bin Items
-        'styrofoam': 'Black/black.html',
-        'diapers': 'Black/black.html',
-        'food wrappers': 'Black/black.html',
-        'broken glass': 'Black/black.html',
-        'plastic bags': 'Black/black.html'
+        'styrofoam': 'black.html',
+        'diapers': 'black.html',
+        'food wrappers': 'black.html',
+        'broken glass': 'black.html',
+        'plastic bags': 'black.html'
     };
 
     const suggestions = {
