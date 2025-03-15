@@ -629,32 +629,108 @@ footer {
     width: 90%;
 }
 
-@media (max-width: 768px) {
-    .search-wrapper {
-        width: 95%;
-        margin: 0 auto;
-        border-radius: 30px;
-        padding: 3px;
-    }
-    
-    .search-wrapper:hover {
-        transform: translateY(-1px);
-        box-shadow: 0 8px 20px rgba(46, 204, 113, 0.2);
-    }
-    
-    /* Your existing mobile styles */
-    #heroSearch {
-        padding: 1rem 1.5rem;
-        font-size: 1rem;
-    }
+/* Responsive Search Bar Styles */
 
-    .search-button {
-        padding: 0.8rem 1.5rem;
-    }
+/* Search wrapper styling */
+.search-wrapper {
+  position: relative;
+  display: flex;
+  align-items: center;
+  background: rgba(255, 255, 255, 0.95);
+  border-radius: 50px;
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+  overflow: hidden;
+  transition: all 0.3s ease;
+  width: 100%;
+  max-width: 600px;
+  margin: 0 auto;
+}
 
-    .search-text {
-        display: none;
-    }
+/* Input field styling */
+.search-wrapper input {
+  flex: 1;
+  border: none;
+  padding: 15px 20px;
+  font-size: 16px;
+  background: transparent;
+  color: #333;
+  outline: none;
+  width: 100%;
+}
+
+/* Search button styling */
+.search-button {
+  background: #4CAF50;
+  border: none;
+  color: white;
+  padding: 15px 20px;
+  cursor: pointer;
+  transition: background 0.3s ease;
+}
+
+.search-button:hover {
+  background: #3e8e41;
+}
+
+.search-button i {
+  font-size: 18px;
+}
+
+/* Search wave animation element */
+.search-wave {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  height: 3px;
+  width: 100%;
+  background: linear-gradient(to right, #4CAF50, #8BC34A);
+  transform: scaleX(0);
+  transform-origin: left;
+  transition: transform 0.3s ease;
+}
+
+.search-wrapper:focus-within .search-wave {
+  transform: scaleX(1);
+}
+
+/* Responsive adjustments */
+@media screen and (max-width: 768px) {
+  .search-wrapper {
+    max-width: 90%;
+  }
+  
+  .search-wrapper input {
+    padding: 12px 15px;
+    font-size: 14px;
+  }
+  
+  .search-button {
+    padding: 12px 15px;
+  }
+  
+  .search-button i {
+    font-size: 16px;
+  }
+}
+
+/* Small screens */
+@media screen and (max-width: 480px) {
+  .search-wrapper {
+    max-width: 95%;
+  }
+  
+  .search-wrapper input {
+    padding: 10px 12px;
+    font-size: 13px;
+  }
+  
+  .search-button {
+    padding: 10px 12px;
+  }
+  
+  .search-button i {
+    font-size: 14px;
+  }
 }
 
 #heroSearch {
