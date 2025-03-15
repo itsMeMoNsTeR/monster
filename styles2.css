@@ -629,108 +629,32 @@ footer {
     width: 90%;
 }
 
-/* Responsive Search Bar Styles */
+@media (max-width: 768px) {
+    .search-wrapper {
+        width: 95%;
+        margin: 0 auto;
+        border-radius: 30px;
+        padding: 3px;
+    }
+    
+    .search-wrapper:hover {
+        transform: translateY(-1px);
+        box-shadow: 0 8px 20px rgba(46, 204, 113, 0.2);
+    }
+    
+    /* Your existing mobile styles */
+    #heroSearch {
+        padding: 1rem 1.5rem;
+        font-size: 1rem;
+    }
 
-/* Search wrapper styling */
-.search-wrapper {
-  position: relative;
-  display: flex;
-  align-items: center;
-  background: rgba(255, 255, 255, 0.95);
-  border-radius: 50px;
-  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
-  overflow: hidden;
-  transition: all 0.3s ease;
-  width: 100%;
-  max-width: 600px;
-  margin: 0 auto;
-}
+    .search-button {
+        padding: 0.8rem 1.5rem;
+    }
 
-/* Input field styling */
-.search-wrapper input {
-  flex: 1;
-  border: none;
-  padding: 15px 20px;
-  font-size: 16px;
-  background: transparent;
-  color: #333;
-  outline: none;
-  width: 100%;
-}
-
-/* Search button styling */
-.search-button {
-  background: #4CAF50;
-  border: none;
-  color: white;
-  padding: 15px 20px;
-  cursor: pointer;
-  transition: background 0.3s ease;
-}
-
-.search-button:hover {
-  background: #3e8e41;
-}
-
-.search-button i {
-  font-size: 18px;
-}
-
-/* Search wave animation element */
-.search-wave {
-  position: absolute;
-  bottom: 0;
-  left: 0;
-  height: 3px;
-  width: 100%;
-  background: linear-gradient(to right, #4CAF50, #8BC34A);
-  transform: scaleX(0);
-  transform-origin: left;
-  transition: transform 0.3s ease;
-}
-
-.search-wrapper:focus-within .search-wave {
-  transform: scaleX(1);
-}
-
-/* Responsive adjustments */
-@media screen and (max-width: 768px) {
-  .search-wrapper {
-    max-width: 90%;
-  }
-  
-  .search-wrapper input {
-    padding: 12px 15px;
-    font-size: 14px;
-  }
-  
-  .search-button {
-    padding: 12px 15px;
-  }
-  
-  .search-button i {
-    font-size: 16px;
-  }
-}
-
-/* Small screens */
-@media screen and (max-width: 480px) {
-  .search-wrapper {
-    max-width: 95%;
-  }
-  
-  .search-wrapper input {
-    padding: 10px 12px;
-    font-size: 13px;
-  }
-  
-  .search-button {
-    padding: 10px 12px;
-  }
-  
-  .search-button i {
-    font-size: 14px;
-  }
+    .search-text {
+        display: none;
+    }
 }
 
 #heroSearch {
@@ -967,4 +891,180 @@ footer {
     transform: translateY(-2px);
 }
 
+/* Innovative Search Styles with Mobile Responsiveness */
+.innovative-search-container {
+    width: 100%;
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 15px;
+}
 
+.search-wrapper {
+    position: relative;
+    width: 100%;
+    max-width: 600px;
+    margin: 0 auto 20px;
+}
+
+#heroSearch {
+    width: 100%;
+    padding: 15px 50px 15px 20px;
+    border-radius: 30px;
+    border: 2px solid #2ecc71;
+    font-size: 16px;
+    outline: none;
+    transition: all 0.3s ease;
+    background-color: rgba(255, 255, 255, 0.9);
+}
+
+#heroSearch:focus {
+    border-color: #27ae60;
+    box-shadow: 0 0 10px rgba(46, 204, 113, 0.3);
+}
+
+.search-button {
+    position: absolute;
+    right: 10px;
+    top: 50%;
+    transform: translateY(-50%);
+    background: #2ecc71;
+    border: none;
+    width: 35px;
+    height: 35px;
+    border-radius: 50%;
+    color: white;
+    cursor: pointer;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: all 0.3s ease;
+}
+
+.search-button:hover {
+    background: #27ae60;
+}
+
+.search-wave {
+    position: absolute;
+    bottom: -2px;
+    left: 0;
+    width: 100%;
+    height: 5px;
+    background: url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320"><path fill="%232ecc71" fill-opacity="0.5" d="M0,224L40,213.3C80,203,160,181,240,181.3C320,181,400,203,480,208C560,213,640,203,720,176C800,149,880,107,960,101.3C1040,96,1120,128,1200,154.7C1280,181,1360,203,1400,213.3L1440,224L1440,320L1400,320C1360,320,1280,320,1200,320C1120,320,1040,320,960,320C880,320,800,320,720,320C640,320,560,320,480,320C400,320,320,320,240,320C160,320,80,320,40,320L0,320Z"></path></svg>');
+    background-size: cover;
+    opacity: 0;
+    transition: opacity 0.3s ease;
+}
+
+#heroSearch:focus + .search-button + .search-wave {
+    opacity: 1;
+}
+
+/* Popular Searches Section */
+.popular-searches {
+    margin-top: 20px;
+    text-align: center;
+}
+
+.popular-searches h4 {
+    margin-bottom: 10px;
+    color: #333;
+    font-size: 18px;
+}
+
+.keywords-container {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.keyword-group {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.keyword-items {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 10px;
+    max-width: 600px;
+}
+
+.keyword {
+    display: inline-block;
+    background-color: rgba(255, 255, 255, 0.8);
+    padding: 8px 15px;
+    border-radius: 20px;
+    margin: 5px;
+    font-size: 14px;
+    color: #333;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    border: 1px solid #ddd;
+}
+
+.keyword:hover {
+    background-color: #2ecc71;
+    color: white;
+    transform: translateY(-2px);
+}
+
+/* Media Queries for Mobile Responsiveness */
+@media screen and (max-width: 768px) {
+    .innovative-search-container {
+        padding: 10px;
+    }
+    
+    #heroSearch {
+        padding: 12px 45px 12px 15px;
+        font-size: 14px;
+    }
+    
+    .search-button {
+        width: 30px;
+        height: 30px;
+    }
+    
+    .popular-searches h4 {
+        font-size: 16px;
+    }
+    
+    .keyword {
+        padding: 6px 12px;
+        font-size: 12px;
+        margin: 4px;
+    }
+}
+
+@media screen and (max-width: 480px) {
+    .search-wrapper {
+        margin-bottom: 15px;
+    }
+    
+    #heroSearch {
+        padding: 10px 40px 10px 12px;
+        font-size: 13px;
+    }
+    
+    .search-button {
+        width: 28px;
+        height: 28px;
+        right: 8px;
+    }
+    
+    .popular-searches h4 {
+        font-size: 14px;
+    }
+    
+    .keyword-items {
+        gap: 5px;
+    }
+    
+    .keyword {
+        padding: 5px 10px;
+        font-size: 11px;
+        margin: 3px;
+    }
+}
