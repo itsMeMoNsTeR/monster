@@ -129,3 +129,50 @@ body.fade-out {
         opacity: 0;
     }
 }
+
+/* Media Queries for Responsive Design */
+
+/* For tablets */
+@media screen and (max-width: 768px) {
+    .landing-content h1 {
+        font-size: 3rem;
+    }
+    
+    .landing-content h2 {
+        font-size: 1.5rem;
+    }
+    
+    .landing-content p {
+        font-size: 1.2rem;
+    }
+    
+    .enter-button {
+        padding: 0.8rem 1.6rem;
+        font-size: 1rem;
+    }
+}
+
+/* For mobile phones */
+@media screen and (max-width: 480px) {
+    .landing-content h1 {
+        font-size: 2rem;
+    }
+    
+    .landing-content h2 {
+        font-size: 1.2rem;
+    }
+    
+    .landing-content p {
+        font-size: 1rem;
+        margin-bottom: 1.5rem;
+    }
+    
+    .enter-button {
+        padding: 0.7rem 1.4rem;
+        font-size: 0.9rem;
+    }
+    
+    .landing-content {
+        padding: 1rem;
+    }
+}
