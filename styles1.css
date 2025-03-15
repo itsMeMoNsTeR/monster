@@ -129,3 +129,52 @@ body.fade-out {
         opacity: 0;
     }
 }
+
+/* Responsive Design for Different Screen Sizes */
+@media (max-width: 768px) {
+    .landing-content h1 {
+        font-size: 2.5rem;
+    }
+    
+    .landing-content h2 {
+        font-size: 1.2rem;
+    }
+    
+    .landing-content p {
+        font-size: 1.2rem;
+    }
+    
+    .enter-button {
+        padding: 0.8rem 1.6rem;
+        font-size: 1rem;
+    }
+}
+
+@media (max-width: 480px) {
+    .landing-content {
+        padding: 1.5rem;
+        width: 90%;
+    }
+    
+    .landing-content h1 {
+        font-size: 2rem;
+    }
+    
+    .landing-content h2 {
+        font-size: 1rem;
+    }
+    
+    .landing-content p {
+        font-size: 1rem;
+        margin-bottom: 1.5rem;
+    }
+    
+    .enter-button {
+        padding: 0.7rem 1.4rem;
+    }
+    
+    .particle {
+        width: 6px;
+        height: 6px;
+    }
+}
