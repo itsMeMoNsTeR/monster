@@ -724,6 +724,10 @@ footer {
 
     .search-button {
         padding: 0.8rem 1.5rem;
+        /* Add these properties to make it more dynamic */
+        right: 10px;  /* Reduce the right position */
+        width: auto;  /* Allow width to adjust automatically */
+        min-width: 40px;  /* Set a minimum width */
     }
 
     .search-text {
