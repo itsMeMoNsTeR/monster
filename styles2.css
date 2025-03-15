@@ -837,6 +837,8 @@ footer {
 
 .keywords-container {
     display: flex;
+    height: auto;
+    width: auto;
     flex-wrap: wrap;
     gap: 1rem;
     justify-content: center;
